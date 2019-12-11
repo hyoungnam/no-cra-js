@@ -8,7 +8,7 @@ class Login extends Component {
     return (
       <div>
         <h1>{this.state.text}</h1>
-        <div>single page application</div>
+        <div>single age application</div>
       </div>
     )
   }

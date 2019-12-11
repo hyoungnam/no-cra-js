@@ -1,7 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 module.exports = {
-  name: 'insta-clone-setting',
+  name: 'No-create-react-app',
   mode: 'development',// 배포모드 hidden-source-map
   devtool: 'eval',
   resolve: {
@@ -29,11 +29,14 @@ module.exports = {
   },
   plugins: [
     new webpack.LoaderOptionsPlugin({debug: true}),
+    new webpack.HotModuleReplacementPlugin()
   ],
   output: {
     path: path.join(__dirname, 'dist'), 
     filename: 'app.js',
     publicPath: '/dist/', // 가상경로 - app.use('/dist', express,static(__dirname, 'dist')
+  },
+  devServer: {
+    open: 'Google Chrome'
   }
-  
 }

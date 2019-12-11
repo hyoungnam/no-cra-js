@@ -1,7 +1,7 @@
 {
-  "name": "instagram_clone",
+  "name": "No-create-react-app",
   "version": "1.0.0",
-  "description": "insta-react-clone",
+  "description": "no cra and set custome webpack, babel setting",
   "main": "webpack.config.js",
   "dependencies": {
     "react-dom": "^16.12.0",
@@ -19,7 +19,7 @@
     "webpack-dev-server": "^3.9.0"
   },
   "scripts": {
-    "dev": "webpack-dev-server --hot"
+    "dev": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC"
